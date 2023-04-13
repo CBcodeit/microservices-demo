@@ -18,10 +18,13 @@ public class Department {
     private String departmentDescription;
     private String departmentCode;
 
-    public Department(String departmentName, String departmentDescription, String departmentCode) {
+    private int departmentCapacity;
+
+    public Department(String departmentName, String departmentDescription, String departmentCode, int departmentCapacity) {
         this.departmentName = departmentName;
         this.departmentDescription = departmentDescription;
         this.departmentCode = departmentCode;
+        this.departmentCapacity = departmentCapacity;
     }
 
     public void setDepartmentName(String departmentName) {
@@ -36,6 +39,10 @@ public class Department {
         this.departmentCode = departmentCode;
     }
 
+    public void setDepartmentCapacity(int departmentCapacity) {
+        this.departmentCapacity = departmentCapacity;
+    }
+
     @Override
     public String toString() {
         return "Department{" +
@@ -43,6 +50,7 @@ public class Department {
                 ", departmentName='" + departmentName + '\'' +
                 ", departmentDescription='" + departmentDescription + '\'' +
                 ", departmentCode='" + departmentCode + '\'' +
+                ", departmentCapacity='" + departmentCapacity + '\'' +
                 '}';
     }
 }
