@@ -20,4 +20,10 @@ public class DepartmentService implements DepartmentServiceI{
         Department savedDepartment = departmentRepository.save(department);
         return Mapper.toDepartmentIdDto(savedDepartment);
     }
+
+    @Override
+    public DepartmentIdDto getDepartmentByCode(String departmentCode) {
+        Department department = departmentRepository.findByDepartmentCode(departmentCode);
+        return Mapper.toDepartmentIdDto(department);
+    }
 }
