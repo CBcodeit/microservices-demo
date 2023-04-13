@@ -16,12 +16,12 @@ public class Department {
     private long id;
     private String departmentName;
     private String departmentDescription;
-    private String getDepartmentCode;
+    private String departmentCode;
 
-    public Department(String departmentName, String departmentDescription, String getDepartmentCode) {
+    public Department(String departmentName, String departmentDescription, String departmentCode) {
         this.departmentName = departmentName;
         this.departmentDescription = departmentDescription;
-        this.getDepartmentCode = getDepartmentCode;
+        this.departmentCode = departmentCode;
     }
 
     public void setDepartmentName(String departmentName) {
@@ -32,8 +32,8 @@ public class Department {
         this.departmentDescription = departmentDescription;
     }
 
-    public void setGetDepartmentCode(String getDepartmentCode) {
-        this.getDepartmentCode = getDepartmentCode;
+    public void setDepartmentCode(String departmentCode) {
+        this.departmentCode = departmentCode;
     }
 
     @Override
@@ -42,7 +42,7 @@ public class Department {
                 "id=" + id +
                 ", departmentName='" + departmentName + '\'' +
                 ", departmentDescription='" + departmentDescription + '\'' +
-                ", getDepartmentCode='" + getDepartmentCode + '\'' +
+                ", departmentCode='" + departmentCode + '\'' +
                 '}';
     }
 }
